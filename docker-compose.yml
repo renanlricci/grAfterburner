@@ -18,9 +18,9 @@ services:
 
   grafana:
     container_name: grafterburner-grafana
-    image: "grafana/grafana:latest"
+    image: "grafana/grafana-arm32v7-linux:latest"
     restart: always
-    user: "1000"
+    user: "root"
     ports:
       - 8025:3000
     volumes:
